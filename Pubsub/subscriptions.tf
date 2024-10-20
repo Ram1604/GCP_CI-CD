@@ -41,7 +41,7 @@ resource "google_pubsub_subscription" "subscription_4" {
   topic = "test.topic.1"
 
   message_retention_duration = "86400s"
-  retain_acked_messages      = true
+  retain_acked_messages      = false
 
   ack_deadline_seconds = 10
 
