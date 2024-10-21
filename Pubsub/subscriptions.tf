@@ -34,15 +34,3 @@ resource "google_pubsub_subscription" "subscription_3" {
     push_endpoint = "https://webhook.site/5611850b-cd7c-4681-afab-c39a117d1515"
   }
 }
-
-//SUBSCRIPTION 4 (PULL)
-resource "google_pubsub_subscription" "subscription_4" {
-  name  = "test.subscription.4"
-  topic = "test.topic.1"
-
-  message_retention_duration = "86400s"
-  retain_acked_messages      = false
-
-  ack_deadline_seconds = 10
-
-}
