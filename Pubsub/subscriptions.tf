@@ -29,7 +29,7 @@ resource "google_pubsub_subscription" "subscription_3" {
   topic = "test.topic.1"
 
   ack_deadline_seconds = 10
-  message_retention_duration = "604800s"
+  message_retention_duration = "60480s"
   push_config {
     push_endpoint = "https://webhook.site/5611850b-cd7c-4681-afab-c39a117d1515"
   }
